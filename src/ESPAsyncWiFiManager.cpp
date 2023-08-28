@@ -1303,8 +1303,10 @@ void AsyncWiFiManager::DEBUG_WM(Generic text)
 {
   if (_debug)
   {
+#ifdef Serial
     Serial.print(F("*WM: "));
     Serial.println(text);
+#endif
   }
 }
 
